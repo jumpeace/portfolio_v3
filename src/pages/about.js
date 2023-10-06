@@ -14,7 +14,7 @@ export default function About() {
                                 <div className="text-3xl text-gray-400">Computer Science College Student</div>
                             </div>
                         </div>
-                        <div className="text-5xl text-gray-600 font-light pl-10 py-4 w-64">About Me</div>
+                        <div className="text-5xl text-gray-600 font-light pl-10 py-4 w-[300px]">About Me</div>
                     </div>
                     <div className="mx-20 text-xl text-black font-light tracking-wider flex flex-col leading-10">
                         <p>2002 年長野県松本市生まれ。 情報専攻の大学 3 年生。 20 歳。</p>

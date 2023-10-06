@@ -21,7 +21,7 @@ export default function Footer() {
                     ))}
                 </div>
                 <div className="flex justify-center">
-                    <div className="text-xl">© 2023, Jumpei Kawahara</div>
+                    <div className="text-xl text-[#405658]">© 2023, Jumpei Kawahara</div>
                 </div>
             </div>
             <div className={`fixed top-0 left-0 w-full h-screen z-[-1] opacity-10`}>

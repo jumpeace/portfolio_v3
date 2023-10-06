@@ -36,7 +36,7 @@ export default function Works() {
             <div className="flex-1"></div>
             <div className="flex-initial grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 mx-auto">
                 {works.map(work => 
-                    <div className="work-container flex flex-col bg-gray-50 text-gray-500 rounded-3xl shadow-xl"
+                    <div className="flex flex-col bg-gray-50 rounded-3xl shadow-xl"
                         >
                         <img src={`${work.imgPath}`} alt={work.title}
                             className="flex-inline mx-auto rounded-t-3xl object-cover"
@@ -45,23 +45,22 @@ export default function Works() {
 
                         {/* 文章部分 */}
                         <div className="m-5 flex-1 flex flex-col">
-                            <div className="flex flex-col">
-                                {/* 見出し */}
-                                <div className="flex-1 text-lg md:text-xl leading-10">{work.title}</div>
-                                {/* 日付 */}
-                                <div className="flex-initial text-xs md:text-sm text-gray-500 leading-10 text-right">
-                                    {work.date}
-                                </div>
+                            {/* 見出し */}
+                            <div className="text-xl text-gray-700">{work.title}</div>
+                            {/* 日付 */}
+                            <div className="flex-initial mt-1 text-sm text-gray-400 text-right">
+                                {work.date}
                             </div>
 
                             {/* 簡単な説明 */}
-                            <div className="h-28 description overflow-y-hidden text-sm md:text-base">{work.description}</div>
+                            <div className="h-14 mt-3 text-gray-600 text-base">{work.description}</div>
 
                             {/* リンク */}
                             {work?.link && (
-                                <div className="ml-auto mr-4">
+                                <div className="ml-auto">
                                     <a href={work.link.uri} target="_blank" rel="noreferrer"
-                                        className="px-3 py-2 rounded-lg text-base md:text-lg no-underline bg-gray-200 text-gray-400 hover:bg-gray-300">
+                                        className="px-3 py-2 rounded-lg text-base no-underline text-[#405658] bg-[#E1E8E9] hover:text-[#6B9093]"
+                                    >
                                         {work.link.title}
                                     </a>
                                 </div>

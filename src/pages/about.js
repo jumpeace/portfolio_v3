@@ -1,10 +1,14 @@
 import Footer from "@/components/footer"
 import NavBar from "@/components/navBar";
+import Head from "next/head";
 import Image from "next/image"
 
 export default function About() {
     return (
         <div className="pt-10 md:pt-12 lg:pt-16 h-screen flex flex-col">
+            <Head>
+                <title>About Me</title>
+            </Head>
             <div className="my-6 md:my-8 lg:my-10 mx-4 md:mx-10 lg:mx-16 flex-1">
                 <div className="flex flex-col gap-y-8 md:gap-y-12 lg:gap-y-16">
                 <div 

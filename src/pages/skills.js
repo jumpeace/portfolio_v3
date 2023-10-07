@@ -6,6 +6,7 @@ import { faScrewdriverWrench, faDatabase, faGem, faLanguage, faCertificate, faId
 import { faIdCard } from "@fortawesome/free-regular-svg-icons";
 import { faCss3, faJs, faPython } from "@fortawesome/free-brands-svg-icons";
 import NavBar from "@/components/navBar";
+import Head from "next/head";
 
 export default function Skills() {
     const [skillGenres] = useState([
@@ -32,6 +33,9 @@ export default function Skills() {
         }
     ])
     return (<div className="pt-16 w-screen h-screen flex flex-col">
+            <Head>
+                <title>Skills</title>
+            </Head>
             <div className="flex-1 z-0">
                 <div className="flex flex-col items-center gap-y-2 md:gap-y-10 lg:gap-y-16">
                     {/* <div 

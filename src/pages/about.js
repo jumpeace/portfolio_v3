@@ -4,18 +4,21 @@ import Image from "next/image"
 
 export default function About() {
     return (
-        <div className="pt-16 h-screen flex flex-col">
-            <div className="my-10 mx-16 flex-1">
-                <div className="flex flex-col gap-y-16">
-                    <div className="flex flex-1 items-center gap-x-12 pr-10">
-                        <Image src='/icon.png' width={120} height={120} className="lg:hidden rounded-full" />
-                        <Image src='/icon.png' width={150} height={150} className="hidden lg:block rounded-full" />
-                        <div className="flex flex-col justify-center gap-y-2">
-                            <div className="text-5xl lg:text-6xl text-gray-600">Jumpei Kawahara</div>
-                            <div className="text-2xl lg:text-3xl text-gray-400">Computer Science College Student</div>
-                        </div>
+        <div className="pt-10 md:pt-12 lg:pt-16 h-screen flex flex-col">
+            <div className="my-6 md:my-8 lg:my-10 mx-4 md:mx-10 lg:mx-16 flex-1">
+                <div className="flex flex-col gap-y-8 md:gap-y-12 lg:gap-y-16">
+                <div 
+                    className="flex flex-col md:flex-row gap-y-4 md:gap-x-12 justify-center items-center"
+                >
+                    <Image src='/icon.png' width={80} height={80} className="md:hidden rounded-full" />
+                    <Image src='/icon.png' width={120} height={120} className="hidden md:block lg:hidden rounded-full" />
+                    <Image src='/icon.png' width={150} height={150} className="hidden lg:block rounded-full" />
+                    <div className="flex flex-col justify-center items-center gap-y-1 md:gap-y-2">
+                        <div className="text-3xl md:text-5xl lg:text-6xl text-gray-700">Jumpei Kawahara</div>
+                        <div className="text-lg md:text-2xl lg:text-3xl text-gray-400">Computer Science College Student</div>
                     </div>
-                    <div className="mx-4 lg:mx-8 text-lg lg:text-xl text-black font-light tracking-wider flex flex-col leading-9 lg:leading-10">
+                </div>
+                    <div className="mx-2 md:mx-4 lg:mx-8 text-sm md:text-lg lg:text-xl text-black font-light tracking-wider flex flex-col leading:9 md:leading-10">
                         <p>2002 年長野県松本市生まれ。 情報専攻の大学 3 年生。 20 歳。</p>
                         <p>　</p>
                         <p>2018 年に長野高専に入学。 </p>

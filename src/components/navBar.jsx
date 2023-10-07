@@ -1,9 +1,10 @@
 import { useState, useReducer } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function NavBar() {
     const router = useRouter();
-    const [links] = useState([
+    const [links, setLinks] = useState([
         {uri: '/', title: 'Top'},
         {uri: '/about', title: 'About Me'},
         {uri: '/skills', title: 'Skills'},
@@ -39,8 +40,8 @@ export default function NavBar() {
                     {links.map(link => (
                         <>
                             {link.uri == router.pathname ? 
-                                (<a className="font-light text-[#415657]" href={link.uri}>{link.title}</a>) :
-                                (<a className="font-light text-gray-300" href={link.uri}>{link.title}</a>)
+                                (<a className="font-normal text-[#415657] border-white border-b-2 hover:border-[#415657]" href={link.uri}>{link.title}</a>) :
+                                (<a className="font-light text-gray-300 border-white border-b-2 hover:border-gray-300" href={link.uri}>{link.title}</a>)
                             } 
                         </>
                         

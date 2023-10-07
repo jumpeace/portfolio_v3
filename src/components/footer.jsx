@@ -7,8 +7,7 @@ export default function Footer() {
     ])
     return (
         <div 
-            className="pt-8 pb-4 flex justify-center items-center"
-            style={{backgroundColor: '#D4DFE0'}}
+            className="pt-8 pb-4 flex justify-center items-center z-10 bg-[#D4DFE0]"
         >
             <div 
                 className="flex flex-col gap-y-4 justify-center"
@@ -23,9 +22,6 @@ export default function Footer() {
                 <div className="flex justify-center">
                     <div className="text-xl text-[#405658]">© 2023, Jumpei Kawahara</div>
                 </div>
-            </div>
-            <div className={`fixed top-0 left-0 w-full h-screen z-[-1] opacity-10`}>
-                <Image src={`/icon.png`} layout={`fill`} objectFit={`cover`} />
             </div>
         </div>
         )

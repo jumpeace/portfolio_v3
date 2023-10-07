@@ -15,9 +15,9 @@ export default function Footer() {
                 <div className="flex justify-center gap-x-6 md:gap-x-8 lg:gap-x-10">
                     {socials.map(social => (
                         <a key={social.name} href={social.uri} className="cursor-pointer rounded-full" target="_blank">
-                            <Image src={social.imgPath} width={30} height={30} className="md:hidden border-none rounded-full"/>
-                            <Image src={social.imgPath} width={36} height={36} className="hidden md:block lg:hidden border-none rounded-full"/>
-                            <Image src={social.imgPath} width={48} height={48} className="hidden lg:block border-none rounded-full"/>
+                            <Image src={social.imgPath} alt={social.name} width={36} height={36} className="hidden md:block lg:hidden border-none rounded-full"/>
+                            <Image src={social.imgPath} alt={social.name} width={30} height={30} className="md:hidden border-none rounded-full"/>
+                            <Image src={social.imgPath} alt={social.name} width={48} height={48} className="hidden lg:block border-none rounded-full"/>
                         </a>
                     ))}
                 </div>

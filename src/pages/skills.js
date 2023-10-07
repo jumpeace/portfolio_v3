@@ -56,7 +56,7 @@ export default function Skills() {
                                 </div>
                             </div>
                             <div className={`fixed top-0 left-0 w-full h-screen z-[-1] opacity-40`}>
-                                <Image src={`/skills.png`} layout={`fill`} objectFit={`cover`} />
+                                <Image src={`/skills.png`} alt="hero image for skills page" layout={`fill`} objectFit={`cover`} />
                             </div>
                         </div>
                         <div className="flex flex-col">

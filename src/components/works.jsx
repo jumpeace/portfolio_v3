@@ -53,13 +53,13 @@ export default function Works() {
                             </div>
 
                             {/* 簡単な説明 */}
-                            <div className="h-14 mt-3 text-gray-600 text-base">{work.description}</div>
+                            <div className="h-14 mt-3 tracking-wide text-black text-base font-light">{work.description}</div>
 
                             {/* リンク */}
                             {work?.link && (
                                 <div className="ml-auto">
                                     <a href={work.link.uri} target="_blank" rel="noreferrer"
-                                        className="px-3 py-2 rounded-lg text-base no-underline text-[#405658] bg-[#E1E8E9] hover:text-[#6B9093]"
+                                        className="px-4 py-2 tracking-wide rounded-lg text-base no-underline text-black font-light bg-gray-200 hover:text-gray-400"
                                     >
                                         {work.link.title}
                                     </a>

@@ -31,7 +31,7 @@ export default function Skills() {
             ]
         }
     ])
-    return (<div className="pt-20 h-screen flex flex-col">
+    return (<div className="pt-16 h-screen flex flex-col">
             <div className="my-10 mx-16 flex-1 z-0">
                 <div className="flex flex-col gap-y-2 md:gap-y-10 lg:gap-y-16">
                     <div className="flex flex-col lg:flex-row items-center lg:divide-x-2">

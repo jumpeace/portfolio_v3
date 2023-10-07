@@ -12,7 +12,7 @@ export default function Title() {
                     <div className="text-3xl text-gray-400">Computer Science College Student</div>
                 </div>
             </div>
-            <div className={`fixed top-0 left-0 w-full h-screen z-[-1] opacity-10`}>
+            <div className={`fixed top-0 left-0 w-full h-screen z-[-1] opacity-60`}>
                 <Image src={`/icon.png`} layout={`fill`} objectFit={`cover`} />
             </div>
         </div>

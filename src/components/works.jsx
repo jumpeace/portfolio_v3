@@ -38,8 +38,14 @@ export default function Works() {
                 {works.map(work => 
                     <div className="flex flex-col bg-gray-50 rounded-3xl shadow-xl"
                         >
-                        <img src={`${work.imgPath}`} alt={work.title}
-                            className="flex-inline mx-auto rounded-t-3xl object-cover w-[272px] h-[153px] md:w-[304px] md:h-[171px] lg:w-[336px] lg:h-[189px]"
+                        <Image src={`${work.imgPath}`} alt={work.title} width={272} height={153}
+                            className="md:hidden flex-inline mx-auto rounded-t-3xl object-cover"
+                        />
+                        <Image src={`${work.imgPath}`} alt={work.title} width={304} height={171}
+                            className="hidden md:block lg:hidden flex-inline mx-auto rounded-t-3xl object-cover"
+                        />
+                        <Image src={`${work.imgPath}`} alt={work.title} width={336} height={189}
+                            className="hidden lg:block flex-inline mx-auto rounded-t-3xl object-cover"
                         />
 
                         {/* 文章部分 */}

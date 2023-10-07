@@ -36,7 +36,7 @@ export default function Works() {
             <div className="flex-1"></div>
             <div className="flex-initial grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 lg:gap-12 mx-auto">
                 {works.map(work => 
-                    <div className="flex flex-col bg-gray-50 rounded-3xl shadow-xl"
+                    <div key={work.title} className="flex flex-col bg-gray-50 rounded-3xl shadow-xl"
                         >
                         <Image src={`${work.imgPath}`} alt={work.title} width={272} height={153}
                             className="md:hidden flex-inline mx-auto rounded-t-3xl object-cover"

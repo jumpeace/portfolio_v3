@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faScrewdriverWrench, faDatabase, faGem, faLanguage, faCertificate, faIdBadge, faCode } from "@fortawesome/free-solid-svg-icons";
 import { faIdCard } from "@fortawesome/free-regular-svg-icons";
 import { faCss3, faJs, faPython } from "@fortawesome/free-brands-svg-icons";
+import NavBar from "@/components/navBar";
 
 export default function Skills() {
     const [skillGenres] = useState([
@@ -30,8 +31,8 @@ export default function Skills() {
             ]
         }
     ])
-    return (<div className="h-screen flex flex-col">
-            <div className="my-10 mx-16 flex-1">
+    return (<div className="pt-14 h-screen flex flex-col">
+            <div className="my-10 mx-16 flex-1 z-0">
                 <div className="flex flex-col gap-y-2 md:gap-y-10 lg:gap-y-16">
                     <div className="flex flex-col lg:flex-row items-center lg:divide-x-2">
                         <div className="flex flex-col md:flex-row flex-1 items-center gap-y-2 md:gap-y-0 md:gap-x-12 md:pr-10">
@@ -81,5 +82,6 @@ export default function Skills() {
                 </div>
             </div>
             <Footer />
+            <NavBar />
         </div>)
     }

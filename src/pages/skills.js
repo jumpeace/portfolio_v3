@@ -46,9 +46,9 @@ export default function Skills() {
                                 className="flex gap-x-12 justify-center"
                             >
                                 <div className="flex justify-center items-center gap-x-12">
-                                    <FontAwesomeIcon icon={faScrewdriverWrench} className="text-6xl font-light text-gray-700"/> 
-                                    <div className="text-7xl font-light tracking-widest text-gray-600">Skills</div>
-                                    <FontAwesomeIcon icon={faScrewdriverWrench} className="text-6xl font-light text-gray-700"/> 
+                                    <FontAwesomeIcon icon={faScrewdriverWrench} className="text-5xl lg:text-6xl font-light text-gray-700"/> 
+                                    <div className="text-6xl lg:text-7xl font-light tracking-widest text-gray-600">Skills</div>
+                                    <FontAwesomeIcon icon={faScrewdriverWrench} className="text-5xl lg:text-6xl font-light text-gray-700"/> 
                                 </div>
                             </div>
                             <div className={`fixed top-0 left-0 w-full h-screen z-[-1] opacity-40`}>
@@ -57,20 +57,21 @@ export default function Skills() {
                         </div>
                         <div className="flex flex-col">
                             {skillGenres.map(skillGenre => (
-                                <div className={`flex py-20 bg-${skillGenre.bgColor}`}>
+                                <div className={`flex py-16 lg:py-20 bg-${skillGenre.bgColor}`}>
                                     <div className="flex-1"></div>
                                     <div className="flex-initial flex flex-col gap-y-6">
                                         <div className="flex gap-x-6 items-center">
-                                            <FontAwesomeIcon icon={skillGenre.icon} className="text-gray-500 text-xl md:text-4xl" />
-                                            <div className="text-gray-600 text-xl md:text-4xl tracking-wider font-light">{skillGenre.title}</div>
+                                            <FontAwesomeIcon icon={skillGenre.icon} className="text-gray-500 text-3xl lg:text-4xl" />
+                                            <div className="text-gray-600 text-3xl lg:text-4xl tracking-wider font-light">{skillGenre.title}</div>
                                         </div>
-                                        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
+                                        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 lg:gap-10">
                                             {skillGenre.skills.map((skill) => (
                                                 <div className="flex flex-col gap-y-3 items-center px-2">
-                                                    <FontAwesomeIcon icon={skill.icon} className="w-[120px] h-[120px] text-gray-400" />
-                                                    <div className="flex flex-col gap-y-1">
-                                                        <div className="text-center text-2xl text-gray-500 w-[200px]">{skill.title}</div>
-                                                        <div className="text-center text-base text-gray-500 font-thin">{skill.details}</div>
+                                                    <FontAwesomeIcon icon={skill.icon} className="w-[90px] h-[90px] lg:w-[120px] lg:h-[120px] text-gray-400" />
+                                                    <div className="flex flex-col gap-y-1 text-gray-500">
+                                                        <div className="lg:hidden text-center text-xl w-[150px]">{skill.title}</div>
+                                                        <div className="hidden lg:block text-center text-2xl w-[200px]">{skill.title}</div>
+                                                        <div className="text-center text-sm lg:text-base font-thin">{skill.details}</div>
                                                     </div>
                                                 </div>
                                             ))}

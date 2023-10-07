@@ -35,8 +35,8 @@ export default function NavBar() {
                     </div>)
                 }
             </div> */}
-            <div className="fixed top-0 left-0 w-full z-10 bg-white px-20 shadow-sm">
-                <div className="flex justify-center gap-x-8 my-4 tracking-widest items-center text-2xl">
+            <div className="fixed top-0 left-0 w-full z-10 bg-white shadow-sm">
+                <div className="flex justify-center gap-x-6 lg:gap-x-8 my-3 lg:my-4 tracking-widest items-center text-xl lg:text-2xl">
                     {links.map(link => (
                         <>
                             {link.uri == router.pathname ? 

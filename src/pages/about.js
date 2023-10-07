@@ -8,13 +8,14 @@ export default function About() {
             <div className="my-10 mx-16 flex-1">
                 <div className="flex flex-col gap-y-16">
                     <div className="flex flex-1 items-center gap-x-12 pr-10">
-                        <Image src='/icon.png' width={150} height={150} className="rounded-full" />
+                        <Image src='/icon.png' width={120} height={120} className="lg:hidden rounded-full" />
+                        <Image src='/icon.png' width={150} height={150} className="hidden lg:block rounded-full" />
                         <div className="flex flex-col justify-center gap-y-2">
-                            <div className="text-6xl text-gray-600">Jumpei Kawahara</div>
-                            <div className="text-3xl text-gray-400">Computer Science College Student</div>
+                            <div className="text-5xl lg:text-6xl text-gray-600">Jumpei Kawahara</div>
+                            <div className="text-2xl lg:text-3xl text-gray-400">Computer Science College Student</div>
                         </div>
                     </div>
-                    <div className="mx-20 text-xl text-black font-light tracking-wider flex flex-col leading-10">
+                    <div className="mx-4 lg:mx-8 text-lg lg:text-xl text-black font-light tracking-wider flex flex-col leading-9 lg:leading-10">
                         <p>2002 年長野県松本市生まれ。 情報専攻の大学 3 年生。 20 歳。</p>
                         <p>　</p>
                         <p>2018 年に長野高専に入学。 </p>

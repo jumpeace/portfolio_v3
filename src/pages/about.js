@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function About() {
     return (
-        <div className="pt-14 h-screen flex flex-col">
+        <div className="pt-20 h-screen flex flex-col">
             <div className="my-10 mx-16 flex-1">
                 <div className="flex flex-col gap-y-16">
                     <div className="h-[150px] flex items-center divide-x-2">
